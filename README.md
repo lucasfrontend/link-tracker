@@ -18,7 +18,7 @@ git clone https://github.com/lucasfrontend/link-tracker
 2. Navegue al directorio del proyecto según su ubicación: 
 
 ```bash
-cd `link-tracker`
+cd link-tracker
 ```
 
 3. Instale las dependencias: `npm install`
@@ -75,7 +75,7 @@ curl -X GET http://localhost:8080/link/:id/stats
 curl -X PUT http://localhost:8080/link/:id/
 ```
 
-## agregar password al enlace
+## Agregar password al enlace
 
 ```bash
 curl -X GET http://localhost:8080/link/:id?password=123
