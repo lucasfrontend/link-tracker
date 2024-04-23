@@ -15,7 +15,7 @@ Sigue los pasos a continuación para instalar el proyecto:
 ```bash
 git clone https://github.com/lucasfrontend/link-tracker
 ```
-2. Navegue al directorio del proyecto: 
+2. Navegue al directorio del proyecto según su ubicación: 
 
 ```bash
 cd `link-tracker`
@@ -31,10 +31,18 @@ npm install
 npm start
 ```
 
-Podrá interactuar con la aplicación en localhost:8080/
+Podrá interactuar con la aplicación en [http://localhost:8080/](http://localhost:8080/)
 
 
 ## Crear un link
+
+- Linux / macOS (Bash):
+
+```bash
+curl -X POST http://localhost:8080/link/create -d "{\"url\": \"http://example.com\"}"
+```
+
+- Windows, PowerShell:
 
 ```bash
 curl -X POST http://localhost:8080/link/create -d "{\"url\": \"http://example.com\"}"
@@ -44,6 +52,8 @@ curl -X POST http://localhost:8080/link/create -d "{\"url\": \"http://example.co
 
 ## Redirección
 
+- Ingrese el link en su navegador:
+
 ```bash
 http://localhost:8080/link/:id
 ```
@@ -51,6 +61,8 @@ http://localhost:8080/link/:id
 ![Ejemplo](images/a2.png)
 
 ## Estadísticas por link
+
+- Ingrese a /stats para ver la cantidad de veces en que ha sido redireccionado:
 
 ```bash
 curl -X GET http://localhost:8080/link/:id/stats
