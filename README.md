@@ -36,14 +36,6 @@ Podrá interactuar con la aplicación en [http://localhost:8080/](http://localho
 
 ## Crear un link
 
-- Linux / macOS (Bash):
-
-```bash
-curl -X POST http://localhost:8080/link/create -d "{\"url\": \"http://example.com\"}"
-```
-
-- Windows, PowerShell:
-
 ```bash
 curl -X POST http://localhost:8080/link/create -d "{\"url\": \"http://example.com\"}"
 ```
